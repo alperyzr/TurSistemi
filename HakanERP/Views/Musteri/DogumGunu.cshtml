@@ -1,0 +1,61 @@
+﻿@model IEnumerable<HakanERP.Models.MusterilerModel>
+
+@{
+    ViewBag.Title = "DogumGunu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<h4>
+    @DateTime.Now.ToString("dd/MM/yyyy")
+    Tarihinde doğan Müşteriler Listesi
+</h4>
+<br />
+@Html.ActionLink("Mail Gönder", "DogumGunuGonder", "Musteriler", new { @class="btn btn-danger"})
+<br /><br />
+<table class="table table-hover" id="DogumGunu">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model=>model.EklendigiTarih)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.Ad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.EPosta)
+            </th>
+            <th>
+                İşlemler
+            </th>
+        </tr>
+    </thead>
+    
+
+@foreach (var item in Model) {
+    <tbody>
+        <tr>
+            <td>
+                @Html.DisplayFor(m=>item.EklendigiTarih)
+            </td>
+            <td>
+                @Html.DisplayFor(m=>item.Ad)
+                @Html.DisplayFor(m=>item.Soyad)
+            </td>
+            <td>
+                @Html.DisplayFor(m=>item.EPosta)
+            </td>
+            <td>
+                @Html.ActionLink("Güncelle", "Guncelle", "Musteri",new { id = item.ID }, new { @class="btn btn-dark"}) 
+                @Html.ActionLink("Detay", "Detay", "Musteri",new { id = item.ID }, new { @class="btn btn-dark"})
+            </td>
+        </tr>
+    </tbody>
+   
+}
+
+</table>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#DogumGunu').DataTable();
+    });
+</script>

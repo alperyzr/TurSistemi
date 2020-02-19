@@ -1,0 +1,263 @@
+﻿@model HakanERP.Models.MusterilerModel
+
+@{
+    ViewBag.Title = "Ekle";
+}
+
+<h2>Müşteri Ekle</h2>
+
+
+@using (Html.BeginForm("Ekle", "Musteri", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.ID)
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ulke, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(m => m.Ulke, new SelectList(ViewBag.Ulke, "UlkeId", "UlkeAdi", 1), "Ülke Seçiniz", new { @name = "Ulke", @class = "form-control" })
+
+                @Html.ValidationMessageFor(model => model.Ulke, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TcNo, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+
+                @************Script tc inputuna harf girmeyi engelller sadece rakama izin verir***********@
+                <script>
+                    function isNumberKey(evt) {
+                        var charCode = (evt.which) ? evt.which : event.keyCode;
+                        if (charCode > 31 && (charCode < 48 || charCode > 57))
+                            return false;
+                        return true;
+                    }
+                </script>
+
+                <input id="tc" type="text" name="TcNo" class="form-control" autocomplete="on" maxlength="11" onkeypress="return isNumberKey(event)">
+                <h4 class="text-uppercase text-danger"></h4>
+                @Html.ValidationMessageFor(model => model.TcNo, "", new { @class = "text-danger" })
+                <input type="button" value="TC Sorgula" data-id="TcNo" class="Sorgula btn btn-dark" />
+
+
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ad, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Ad, new { htmlAttributes = new { @class = "form-control", name = "Ad" } })
+                @Html.ValidationMessageFor(model => model.Ad, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Soyad, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Soyad, new { htmlAttributes = new { @class = "form-control", name = "Soyad" } })
+                @Html.ValidationMessageFor(model => model.Soyad, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DogumTarihi, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.DogumTarihi, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                @Html.ValidationMessageFor(model => model.DogumTarihi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Cinsiyet, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(m => m.Cinsiyet, new List<SelectListItem>
+{
+    new SelectListItem{ Text="ERKEK", Value = "ERKEK" },
+    new SelectListItem{ Text="KADIN", Value = "KADIN" },
+
+ }, new { @class = "form-control", name = "Cinsiyet" })
+                @Html.ValidationMessageFor(model => model.Cinsiyet, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Telefon, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Telefon, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Telefon, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Adres, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Adres, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Adres, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.GSM, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.GSM, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.GSM, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EPosta, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.EPosta, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.EPosta, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Fax, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Fax, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Fax, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Unvan, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Unvan, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Unvan, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.VergiDairesi, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.VergiDairesi, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.VergiDairesi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.VergiNo, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.VergiNo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.VergiNo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PasapartNo, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PasapartNo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PasapartNo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PasaportBitisTarihi, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.PasaportBitisTarihi, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                @Html.ValidationMessageFor(model => model.PasaportBitisTarihi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.RezNo, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.RezNo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.RezNo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Kaydet" class="btn btn-danger" name="Kaydet" />
+
+            </div>
+        </div>
+
+    </div>
+
+}
+
+<div>
+    @Html.ActionLink("Listeye Geri Dön", "Index", "Musteri", new { @class = "btn btn-dark" })
+
+</div>
+
+<script>
+    $("document").ready(function () {
+
+        var checkTcNum = function (value) {
+            value = value.toString();
+            var isEleven = /^[0-9]{11}$/.test(value);
+            var totalX = 0;
+            for (var i = 0; i < 10; i++) {
+                totalX += Number(value.substr(i, 1));
+            }
+            var isRuleX = totalX % 10 == value.substr(10, 1);
+            var totalY1 = 0;
+            var totalY2 = 0;
+            for (var i = 0; i < 10; i += 2) {
+                totalY1 += Number(value.substr(i, 1));
+            }
+            for (var i = 1; i < 10; i += 2) {
+                totalY2 += Number(value.substr(i, 1));
+            }
+            var isRuleY = ((totalY1 * 7) - totalY2) % 10 == value.substr(9, 0);
+            return isEleven && isRuleX && isRuleY;
+        };
+
+
+        $('#tc').on('keyup focus blur load', function (event) {
+            event.preventDefault();
+            var isValid = checkTcNum($(this).val());
+            console.log('isValid ', isValid);
+            if (isValid) {
+                $('h4').text("T.C Numarası Doğru").attr('class', 'text-uppercase text-success');
+            }
+            else {
+                $('h4').text("T.C Numarası Yanlış").attr('class', 'text-uppercase text-danger');
+            }
+        });
+
+
+
+
+    }); //document.ready
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".Sorgula").click(function () {
+            var TcNo = $(this).attr("data-id");
+
+            $.ajax({
+                url: '/Musteri/Sorgula/' + TcNo,
+                data: {
+                    'TcNo': $("#tc").val(),
+                },
+                type: 'POST',
+                success: function (result) {
+                    sessionStorage.setItem("tcNumara", tc.innerText);
+                    console.log(result);
+                    if (result == true)
+                        alert("Kayıt Eklenebilir");
+
+                    else
+                        alert("Kayıt eklenemez, Böyle bir TC mevcut");
+                }
+            });
+        });
+    });
+</script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

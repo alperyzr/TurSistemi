@@ -1,0 +1,192 @@
+﻿@model HakanERP.Models.MusterilerModel
+
+@{
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    ViewBag.Title = "Ekle";
+}
+
+<h2>Müşteri Filtrele</h2>
+<div class="alert-success" style="padding-top:3px; padding-bottom:3px;">
+    <h4 style="text-align:center;">
+       
+        Kullanım Klavuzu
+    </h4>
+    <p style="text-align:center; margin-top:1px;">
+        Sadece Girilen yaşı bulak için Yaş kutucuğunu,<br />
+        Girilen yaşı ve daha büyükleri görmek için Başlangıç yaş kutucuğu,<br />
+        Girilen yaştan küçük yaşları görmek için bitiş yaş kutucuğu,<br />
+        Belli bir yaş aralığı için başlangıç yaş ve bitiş yaş kutucukları doldurulmalıdır.<br />
+       
+    </p>
+
+    <h5 style="color:red; font-size:16px; text-align:center;">Önemli uyarı:</h5>
+    <p style="text-align:center;">
+        Cinsiyet seçilmediği takdirde girilen yaşla uyuşan tüm kayıtlar getirilir.<br />
+        Yaş Kutucukları boşsa girilen cinsiyetin tüm değerleri getirilir.<br />
+        Aynı şekilde hiç bir veri girilmezse yine tüm kayıtlar getirilir.<br />
+        Üç yaş kutusuda doldurulursa yine tüm kayıtlar getirilir<br />
+        Tüm kayıtlar getileceği zaman 3 ile 5 saniye arasında bekleyiniz. Kayıtların getirilmesi uzun sürebilir.<br />
+        Google tarafından şart koşulan dakikada 30 mail sınırı için 30 dan fazla mail gönderiminde her mail ortalama 2 saniye bekletilerek gönderilir<br />
+        1 satte ise en fazla 200 mail gönderimi limiti mevcuttur, 200 üstü mail göndermeye ÇALIŞMAYINIZ !
+        
+    </p>
+</div>
+
+<hr />
+<button id="btnGonder" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-red" style="border-radius:5px;">Listeyi Göster</button>
+<form action="/Musteri/Filtrele" method="post" enctype="multipart/form-data">
+
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.ID)
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+        <br />
+        <table class="table" style="border:none">
+            <tr>
+                <td style="border-top:none;">
+                    Yaş
+                </td>
+                <td style="border-top:none;">
+                    @Html.TextBox("Yas3", null, new { @class = "form-control" })
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top:none;">
+                    Başlangıç yaş
+                </td>
+                <td style="border-top:none;">
+                    @Html.TextBox("Yas1", null, new { @class = "form-control" })
+                </td>
+                <td style="border-top:none;">
+                    Bitiş yaş
+                </td>
+                <td style="border-top:none;">
+                    @Html.TextBox("Yas2", null, new { @class = "form-control" })
+                </td>
+            </tr>
+
+            <tr>
+                <td style="border-top:none;">
+                    Cinsiyet
+                </td>
+                <td style="border-top:none;">
+                    @Html.DropDownListFor(m => m.Cinsiyet, new List<SelectListItem>
+{
+               new SelectListItem {Text="Seçiniz",Value="Seçiniz" },
+    new SelectListItem{ Text="ERKEK", Value = "ERKEK" },
+    new SelectListItem{ Text="KADIN", Value = "KADIN" },
+
+ }, new { @class = "form-control", name = "Cinsiyet" })
+                </td>
+            </tr>
+        </table>
+
+
+    
+
+       
+
+
+
+    <div class="form-horizontal">
+        <h4>Mail Gönder</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Baslik, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Baslik, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Baslik, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Icerik, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Icerik,new { @style = "margin: 0px; height: 168px; width: 279px;" })
+                @Html.ValidationMessageFor(model => model.Icerik, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Mail Gönder" class="btn btn-danger" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    @Html.ActionLink("Listeye Geri Dön", "Index", "Musteri", new { @class = "btn btn-dark" })
+
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnGonder").click(function () {
+            var yas1 = document.getElementById('Yas1').value;
+            var yas2 = document.getElementById('Yas2').value;
+            var yas3 = document.getElementById('Yas3').value;
+            var cins = document.getElementById('Cinsiyet').value;
+            document.getElementById('su').innerHTML = "";
+//--------- JSON Verisini Bu Arada Oluşturdum--------------------
+            var MusterilerModel = {
+                Yas3: yas3,
+                Yas2: yas2,
+                Yas1: yas1,
+                Cinsiyet: cins
+            }
+//--------- JSON Verisini Bu Arada Oluşturdum--------------------
+
+            $.ajax({
+                url: '@Url.Action("Goster", "Musteri")',
+                type: 'POST',
+                dataType: 'json',
+                data: MusterilerModel,
+                success: function (data) {
+                    for (var i = 0; i < data.length; i++) {
+                       
+
+                        document.getElementById('su').innerHTML += '<tr><td>' + data[i].TcNo + '</td><td>' + data[i].Ad + ' ' + data[i].Soyad + '</td><td>' + data[i].Telefon + '</td><td>' + data[i].EPosta + '</td><td>' + data[i].Yas + '</td><td>' + data[i].Cinsiyet + '</td></tr>';
+                       
+                    }
+                    document.getElementById('sayac').innerHTML += '<p>Toplam Kayıt=' + data.length + '<p>';
+                }
+            });
+        });
+    });
+</script>
+
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+        <div class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <p id="sayac"></p>
+            <table class="table" id="Filtrele">
+                <thead>
+                    <tr>
+                        <th>T.C Numarası</th>
+                        <th>Müşteri Adı</th>
+                        <th>Telefon</th>
+                        <th>E-Posta</th>
+                        <th>Yaş</th>
+                        <th>Cinsiyet</th>
+                    </tr>
+                </thead>
+                <tbody id="su"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#Filtrele').DataTable();
+    });
+</script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

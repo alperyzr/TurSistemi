@@ -1,0 +1,217 @@
+﻿@model IEnumerable<HakanERP.Models.MusterilerModel>
+
+@{
+    ViewBag.Title = "Detay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+@foreach (var item in Model)
+{
+    <h4>
+        @Html.DisplayFor(m => item.Ad)
+        @Html.DisplayFor(m=>item.Soyad)
+        'ın Detayı
+    </h4>
+    break;
+
+}
+<br>
+
+<div style="width:100%; background-color:#e32124; height:30px; border:2px solid #000000; border-bottom:0px; color:#ffffff; position:center; font-size:18px; padding-left:25px;">Müşteri Detayı</div>
+<table class="table table-hover" style="border:3px solid #000000; border-top:0px;">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UlkeAdi)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.UlkeAdi)
+            </td>
+            <th style="border-left:3px solid #000000">
+                @Html.DisplayNameFor(model => model.TcNo)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.TcNo)
+            </td>
+            <th></th>
+            <td style="border-right:3px solid #000000"></td>
+        </tr>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Ad)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ad)
+            </td>
+            <th style="border-left:3px solid #000000">
+                @Html.DisplayNameFor(model => model.Soyad)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soyad)
+            </td>
+            <th>
+                @Html.DisplayNameFor(model => model.Cinsiyet)
+            </th>
+            <td>
+                @Html.DisplayFor(model => item.Cinsiyet)
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DogumTarihi)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.DogumTarihi)
+            </td>
+            <th style="border-left:3px solid #000000">@Html.DisplayNameFor(model => model.Yas)</th>
+            <td>@Html.DisplayFor(modelItem => item.Yas)</td>
+            <th></th>
+            <td style="border-right:3px solid #000000"></td>
+        </tr>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefon)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefon)
+            </td>
+            <th style="border-left:3px solid #000000">
+                Telefon 2
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.GSM)
+            </td>
+            <th></th>
+            <td style="border-right:3px solid #000000"></td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Adres)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adres)
+            </td>
+            <th style="border-left:3px solid #000000">
+                @Html.DisplayNameFor(model => model.Unvan)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Unvan)
+            </td>
+            <th></th>
+            <td style="border-right:3px solid #000000"></td>
+        </tr>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EPosta)
+            </th>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.EPosta)
+            </td>
+            <th style="border-left:3px solid #000000">
+                @Html.DisplayNameFor(model => model.Fax)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fax)
+            </td>
+            <th></th>
+             <td style="border-right:3px solid #000000"></td>
+        </tr>
+
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PasapartNo)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.PasapartNo)
+            </td>
+            <th style="border-left:3px solid #000000">
+                @Html.DisplayNameFor(model => model.PasaportBitisTarihi)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.PasaportBitisTarihi)
+            </td>
+            <th></th>
+             <td style="border-right:3px solid #000000"></td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RezNo)
+            </th>
+            <td  style="border-right:3px solid #000000">
+                @Html.DisplayFor(modelItem => item.RezNo)
+            </td>
+            <th></th>
+            <td></td>
+            <th></th>
+            <td style="border-right:3px solid #000000"></td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.VergiDairesi)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.VergiDairesi)
+            </td>
+            <th style="border-left:3px solid #000000">
+                @Html.DisplayNameFor(model => model.VergiNo)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.VergiNo)
+            </td>
+            <th></th>
+             <td style="border-right:3px solid #000000"></td>
+        </tr>
+
+
+    }
+
+</table>
+<br /><br />
+<div style="width:100%; background-color:#e32124; height:30px; border:2px solid #000000; border-bottom:0px; color:#ffffff; position:center; font-size:18px; padding-left:25px;">Müşteriyi Kaydeden Personel Bilgisi</div>
+<table class="table table-hover" style="border:3px solid #000000; border-top:0px;">
+   @foreach (var item in Model)
+   {
+      <tr>
+          <td>
+              Ekleme Tarihi
+          </td>
+          <td>
+              @Html.DisplayFor(modelItem=>item.EklendigiTarih)
+          </td>
+     
+   
+        <td>
+            Ekleyen Personel
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EkleyenPersonel)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Güncelleme Tarihi
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GuncellendigiTarih)
+        </td>
+
+
+        <td>
+            Güncelleyen Personel
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GuncelleyenPersonel)
+        </td>
+    </tr>
+
+   }
+</table>
+@Html.ActionLink("Listeye Geri Dön", "Index", "Musteri", new { @class = "btn btn-dark" })

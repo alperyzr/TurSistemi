@@ -1,0 +1,96 @@
+﻿@model IEnumerable<HakanERP.Models.TutarModel>
+
+@{
+    ViewBag.Title = "Detay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+@foreach (var item in Model)
+{
+    <h4>
+        @Html.DisplayFor(m => item.TurAdi)
+
+        Detayı
+    </h4>
+    break;
+
+}
+<br>
+
+
+<div style="width:100%; background-color:#e32124; height:30px; border:2px solid #000000; border-bottom:0px; color:#ffffff; position:center; font-size:18px; padding-left:25px;">Tur Bilgisi</div>
+<table class="table table-hover" style="border:3px solid #000000; border-top:0px;">
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.TurAdi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BaslangicTarihi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BitisTarihi)
+        </th>
+       
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.TurAdi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BaslangicTarihi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BitisTarihi)
+        </td>
+        
+    </tr>
+}
+
+</table>
+<br /><br />
+
+<div style="width:100%; background-color:#e32124; height:30px; border:2px solid #000000; border-bottom:0px; color:#ffffff; position:center; font-size:18px; padding-left:25px;">Turu Kaydeden Personel Bilgisi</div>
+
+<table class="table table-hover" style="border:3px solid #000000; border-top:0px;">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                Ekleme Tarihi
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ET)
+            </td>
+
+
+            <td>
+                Ekleyen Personel
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EP)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Güncelleme Tarihi
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GT)
+            </td>
+
+
+            <td>
+                Güncelleyen Personel
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GP)
+            </td>
+        </tr>
+
+    }
+</table>

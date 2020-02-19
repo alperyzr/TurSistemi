@@ -1,0 +1,243 @@
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\ApplicationInsights.config
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\csc.exe
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\vbc.exe
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\VBCSCompiler.exe
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.dll.config
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.dll
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.pdb
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\Microsoft.AI.Web.xml
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\Microsoft.ApplicationInsights.xml
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.csprojResolveAssemblyReference.cache
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.dll
+C:\Users\alper.yazir\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.pdb
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\ApplicationInsights.config
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\csc.exe
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\vbc.exe
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\VBCSCompiler.exe
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.dll.config
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.dll
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.pdb
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\Microsoft.AI.Web.xml
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.csprojResolveAssemblyReference.cache
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.dll
+C:\Users\Alper Yazır\Documents\Visual Studio 2015\Projects\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.pdb
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\ApplicationInsights.config
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\roslyn\csc.exe
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\roslyn\vbc.exe
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\roslyn\VBCSCompiler.exe
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.dll.config
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.pdb
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\Microsoft.AI.Web.xml
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\Microsoft.ApplicationInsights.xml
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.csprojResolveAssemblyReference.cache
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.pdb
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\ApplicationInsights.config
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\csc.exe
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\vbc.exe
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\VBCSCompiler.exe
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.dll.config
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.dll
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.pdb
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\Microsoft.AI.Web.xml
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.csprojResolveAssemblyReference.cache
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.dll
+C:\Users\Alper Yazır\Desktop\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.pdb
+D:\Projeler\HakanERP\HakanERPModelClass\bin\ApplicationInsights.config
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\csc.exe
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\System.Collections.Immutable.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\vbc.exe
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\VBCSCompiler.exe
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\VBCSCompiler.exe.config
+D:\Projeler\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.dll.config
+D:\Projeler\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.pdb
+D:\Projeler\HakanERP\HakanERPModelClass\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projeler\HakanERP\HakanERPModelClass\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projeler\HakanERP\HakanERPModelClass\bin\Microsoft.AI.Web.xml
+D:\Projeler\HakanERP\HakanERPModelClass\bin\Microsoft.AI.WindowsServer.xml
+D:\Projeler\HakanERP\HakanERPModelClass\bin\Microsoft.ApplicationInsights.xml
+D:\Projeler\HakanERP\HakanERPModelClass\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projeler\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.csprojAssemblyReference.cache
+D:\Projeler\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.csproj.CoreCompileInputs.cache
+D:\Projeler\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.csproj.CopyComplete
+D:\Projeler\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.dll
+D:\Projeler\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.pdb
+D:\Projeler\HakanERP\HakanERPModelClass\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Projeler\HakanERP\HakanERPModelClass\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\csc.exe.config
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\csc.rsp
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\csi.exe
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\csi.exe.config
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\csi.rsp
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\System.Buffers.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\System.Memory.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\System.Numerics.Vectors.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\vbc.exe.config
+D:\Projeler\HakanERP\HakanERPModelClass\bin\roslyn\vbc.rsp
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\ApplicationInsights.config
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\csc.exe
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\csc.exe.config
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\csc.rsp
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\csi.exe
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\csi.exe.config
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\csi.rsp
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\System.Buffers.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\System.Memory.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\vbc.exe
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\vbc.exe.config
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\vbc.rsp
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\VBCSCompiler.exe
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.dll.config
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.pdb
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\Microsoft.AI.Web.xml
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\Microsoft.ApplicationInsights.xml
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.csprojResolveAssemblyReference.cache
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.dll
+C:\Users\alper.yazir\Desktop\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.pdb
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\ApplicationInsights.config
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\csc.exe
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\csc.exe.config
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\csc.rsp
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\csi.exe
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\csi.exe.config
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\csi.rsp
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\System.Buffers.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\System.Memory.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\vbc.exe
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\vbc.exe.config
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\vbc.rsp
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\VBCSCompiler.exe
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.dll.config
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\HakanERPModelClass.pdb
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\Microsoft.AI.Web.xml
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\Microsoft.ApplicationInsights.xml
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.csprojResolveAssemblyReference.cache
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.dll
+C:\Users\alper.yazir\Desktop\Projeler\Hakan ERP\HakanERP\HakanERPModelClass\obj\Debug\HakanERPModelClass.pdb

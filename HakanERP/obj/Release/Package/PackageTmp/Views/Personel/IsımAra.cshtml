@@ -1,0 +1,18 @@
+﻿@model HakanERP.Models.PersonellerModel
+
+<form action="/Personel/IsımAra" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    <table style="float:right;">
+        <tr>
+
+            <td>
+                @Html.EditorFor(model => model.Adi, new { htmlAttributes = new { @class = "form-control" } })
+            </td>
+            <td>
+                <input type="submit" value="İsime Göre Ara" class="btn btn-primary" style="width:200px; height:35px;" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+

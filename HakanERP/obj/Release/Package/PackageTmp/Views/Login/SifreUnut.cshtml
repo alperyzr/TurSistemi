@@ -1,0 +1,91 @@
+﻿@model HakanERP.Models.PersonellerModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    @*<meta name="viewport" content="width=device-width" />*@
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/tech.png" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Login_v16/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Login_v16/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Login_v16/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Login_v16/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Login_v16/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Login_v16/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Login_v16/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Login_v16/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Login_v16/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/Login_v16/css/main.css">
+    <!--===============================================================================================-->
+    <title>Sifremi Unuttum</title>
+</head>
+
+<body style="background-color:#fff; float:right; margin-right:500px; margin-top:250px;">
+
+    @using (Html.BeginForm())
+            {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <span class="login100-form-title p-b-41" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                &nbsp; &nbsp; &nbsp; Şİfremi Unuttum
+            </span>
+            <hr style="color:black;" />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <table>
+                <tr>
+                    <td>
+                        <label class="control-label" style="color:black; margin-left:10px;">
+                            E-Mail
+                        </label>
+                    </td>
+                    <td>
+                        <div style="width:375px;">
+                            @Html.EditorFor(model => model.EMail, new { htmlAttributes = new { @class = "form-control", @style = "border:1px solid #000" } })
+                            @Html.ValidationMessageFor(model => model.EMail, "", new { @class = "text-danger" })
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <table>
+                <tr>
+                    <td>
+                        <div style="width:250px;">
+                            <input type="submit" value="Şİfre Gönder" class="login100-form-btn" style="margin-top:1px;" />
+
+                        </div>
+                    </td>
+                    <td>
+
+                        <div style="width:250px;">
+                            @Html.ActionLink("Anasayfaya geri dön", "Index", "Login", new { @class = "login100-form-btn" })
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    }
+
+</body>
+
+</html>

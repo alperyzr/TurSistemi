@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.3.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.3.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4923E9EC-6015-483F-B575-8D894B314852}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HakanERPModelClass</RootNamespace>
+    <AssemblyName>HakanERPModelClass</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.4.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.9.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.9.1\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.9.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.9.1\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.9.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.9.1\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.9.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.9.1\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.9.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.9.1\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.9.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.9.1\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.5\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.5.0\lib\net45\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\HakanERPModelClass.dll" />
+    <Content Include="bin\HakanERPModelClass.pdb" />
+    <Content Include="bin\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="bin\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="bin\Microsoft.AI.Web.dll" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="bin\Microsoft.ApplicationInsights.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="scripts\tinymce\langs\en.js" />
+    <Content Include="scripts\tinymce\license.txt" />
+    <Content Include="scripts\tinymce\plugins\advhr\css\advhr.css" />
+    <Content Include="scripts\tinymce\plugins\advhr\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\advhr\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\advhr\js\rule.js" />
+    <Content Include="scripts\tinymce\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="scripts\tinymce\plugins\advhr\rule.htm" />
+    <Content Include="scripts\tinymce\plugins\advimage\css\advimage.css" />
+    <Content Include="scripts\tinymce\plugins\advimage\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\advimage\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\advimage\image.htm" />
+    <Content Include="scripts\tinymce\plugins\advimage\img\sample.gif" />
+    <Content Include="scripts\tinymce\plugins\advimage\js\image.js" />
+    <Content Include="scripts\tinymce\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="scripts\tinymce\plugins\advlink\css\advlink.css" />
+    <Content Include="scripts\tinymce\plugins\advlink\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\advlink\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\advlink\js\advlink.js" />
+    <Content Include="scripts\tinymce\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="scripts\tinymce\plugins\advlink\link.htm" />
+    <Content Include="scripts\tinymce\plugins\advlist\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\advlist\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\autolink\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\autolink\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\autoresize\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\autoresize\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\autosave\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\autosave\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\autosave\langs\en.js" />
+    <Content Include="scripts\tinymce\plugins\bbcode\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\bbcode\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\contextmenu\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\directionality\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\directionality\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\emotions\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\emotions\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\emotions\emotions.htm" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="scripts\tinymce\plugins\emotions\js\emotions.js" />
+    <Content Include="scripts\tinymce\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="scripts\tinymce\plugins\example\dialog.htm" />
+    <Content Include="scripts\tinymce\plugins\example\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\example\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\example\img\example.gif" />
+    <Content Include="scripts\tinymce\plugins\example\js\dialog.js" />
+    <Content Include="scripts\tinymce\plugins\example\langs\en.js" />
+    <Content Include="scripts\tinymce\plugins\example\langs\en_dlg.js" />
+    <Content Include="scripts\tinymce\plugins\example_dependency\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\example_dependency\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\fullpage\css\fullpage.css" />
+    <Content Include="scripts\tinymce\plugins\fullpage\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\fullpage\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\fullpage\fullpage.htm" />
+    <Content Include="scripts\tinymce\plugins\fullpage\js\fullpage.js" />
+    <Content Include="scripts\tinymce\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="scripts\tinymce\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\fullscreen\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="scripts\tinymce\plugins\iespell\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\iespell\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\inlinepopups\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="scripts\tinymce\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="scripts\tinymce\plugins\inlinepopups\template.htm" />
+    <Content Include="scripts\tinymce\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\insertdatetime\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\layer\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\layer\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\legacyoutput\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\legacyoutput\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\lists\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\lists\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\media\css\media.css" />
+    <Content Include="scripts\tinymce\plugins\media\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\media\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\media\js\embed.js" />
+    <Content Include="scripts\tinymce\plugins\media\js\media.js" />
+    <Content Include="scripts\tinymce\plugins\media\langs\en_dlg.js" />
+    <Content Include="scripts\tinymce\plugins\media\media.htm" />
+    <Content Include="scripts\tinymce\plugins\media\moxieplayer.swf" />
+    <Content Include="scripts\tinymce\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\nonbreaking\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\noneditable\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\noneditable\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\pagebreak\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\paste\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\paste\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\paste\js\pastetext.js" />
+    <Content Include="scripts\tinymce\plugins\paste\js\pasteword.js" />
+    <Content Include="scripts\tinymce\plugins\paste\langs\en_dlg.js" />
+    <Content Include="scripts\tinymce\plugins\paste\pastetext.htm" />
+    <Content Include="scripts\tinymce\plugins\paste\pasteword.htm" />
+    <Content Include="scripts\tinymce\plugins\preview\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\preview\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\preview\example.html" />
+    <Content Include="scripts\tinymce\plugins\preview\jscripts\embed.js" />
+    <Content Include="scripts\tinymce\plugins\preview\preview.html" />
+    <Content Include="scripts\tinymce\plugins\print\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\print\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\save\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\save\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="scripts\tinymce\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\searchreplace\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="scripts\tinymce\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="scripts\tinymce\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="scripts\tinymce\plugins\spellchecker\css\content.css" />
+    <Content Include="scripts\tinymce\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\spellchecker\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\spellchecker\img\wline.gif" />
+    <Content Include="scripts\tinymce\plugins\style\css\props.css" />
+    <Content Include="scripts\tinymce\plugins\style\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\style\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\style\js\props.js" />
+    <Content Include="scripts\tinymce\plugins\style\langs\en_dlg.js" />
+    <Content Include="scripts\tinymce\plugins\style\props.htm" />
+    <Content Include="scripts\tinymce\plugins\tabfocus\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\tabfocus\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\table\cell.htm" />
+    <Content Include="scripts\tinymce\plugins\table\css\cell.css" />
+    <Content Include="scripts\tinymce\plugins\table\css\row.css" />
+    <Content Include="scripts\tinymce\plugins\table\css\table.css" />
+    <Content Include="scripts\tinymce\plugins\table\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\table\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\table\js\cell.js" />
+    <Content Include="scripts\tinymce\plugins\table\js\merge_cells.js" />
+    <Content Include="scripts\tinymce\plugins\table\js\row.js" />
+    <Content Include="scripts\tinymce\plugins\table\js\table.js" />
+    <Content Include="scripts\tinymce\plugins\table\langs\en_dlg.js" />
+    <Content Include="scripts\tinymce\plugins\table\merge_cells.htm" />
+    <Content Include="scripts\tinymce\plugins\table\row.htm" />
+    <Content Include="scripts\tinymce\plugins\table\table.htm" />
+    <Content Include="scripts\tinymce\plugins\template\blank.htm" />
+    <Content Include="scripts\tinymce\plugins\template\css\template.css" />
+    <Content Include="scripts\tinymce\plugins\template\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\template\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\template\js\template.js" />
+    <Content Include="scripts\tinymce\plugins\template\langs\en_dlg.js" />
+    <Content Include="scripts\tinymce\plugins\template\template.htm" />
+    <Content Include="scripts\tinymce\plugins\visualchars\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\visualchars\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\wordcount\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\wordcount\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\del.htm" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\editor_plugin_src.js" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="scripts\tinymce\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="scripts\tinymce\themes\advanced\about.htm" />
+    <Content Include="scripts\tinymce\themes\advanced\anchor.htm" />
+    <Content Include="scripts\tinymce\themes\advanced\charmap.htm" />
+    <Content Include="scripts\tinymce\themes\advanced\color_picker.htm" />
+    <Content Include="scripts\tinymce\themes\advanced\editor_template.js" />
+    <Content Include="scripts\tinymce\themes\advanced\editor_template_src.js" />
+    <Content Include="scripts\tinymce\themes\advanced\image.htm" />
+    <Content Include="scripts\tinymce\themes\advanced\img\colorpicker.jpg" />
+    <Content Include="scripts\tinymce\themes\advanced\img\flash.gif" />
+    <Content Include="scripts\tinymce\themes\advanced\img\icons.gif" />
+    <Content Include="scripts\tinymce\themes\advanced\img\iframe.gif" />
+    <Content Include="scripts\tinymce\themes\advanced\img\pagebreak.gif" />
+    <Content Include="scripts\tinymce\themes\advanced\img\quicktime.gif" />
+    <Content Include="scripts\tinymce\themes\advanced\img\realmedia.gif" />
+    <Content Include="scripts\tinymce\themes\advanced\img\shockwave.gif" />
+    <Content Include="scripts\tinymce\themes\advanced\img\trans.gif" />
+    <Content Include="scripts\tinymce\themes\advanced\img\video.gif" />
+    <Content Include="scripts\tinymce\themes\advanced\img\windowsmedia.gif" />
+    <Content Include="scripts\tinymce\themes\advanced\js\about.js" />
+    <Content Include="scripts\tinymce\themes\advanced\js\anchor.js" />
+    <Content Include="scripts\tinymce\themes\advanced\js\charmap.js" />
+    <Content Include="scripts\tinymce\themes\advanced\js\color_picker.js" />
+    <Content Include="scripts\tinymce\themes\advanced\js\image.js" />
+    <Content Include="scripts\tinymce\themes\advanced\js\link.js" />
+    <Content Include="scripts\tinymce\themes\advanced\js\source_editor.js" />
+    <Content Include="scripts\tinymce\themes\advanced\langs\en.js" />
+    <Content Include="scripts\tinymce\themes\advanced\langs\en_dlg.js" />
+    <Content Include="scripts\tinymce\themes\advanced\link.htm" />
+    <Content Include="scripts\tinymce\themes\advanced\shortcuts.htm" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\default\content.css" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\default\dialog.css" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\default\img\buttons.png" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\default\img\items.gif" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\default\img\menu_arrow.gif" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\default\img\menu_check.gif" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\default\img\progress.gif" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\default\img\tabs.gif" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\default\ui.css" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\highcontrast\content.css" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\highcontrast\dialog.css" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\highcontrast\ui.css" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\o2k7\content.css" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\o2k7\dialog.css" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\o2k7\img\button_bg.png" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\o2k7\img\button_bg_black.png" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\o2k7\img\button_bg_silver.png" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\o2k7\ui.css" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\o2k7\ui_black.css" />
+    <Content Include="scripts\tinymce\themes\advanced\skins\o2k7\ui_silver.css" />
+    <Content Include="scripts\tinymce\themes\advanced\source_editor.htm" />
+    <Content Include="scripts\tinymce\themes\simple\editor_template.js" />
+    <Content Include="scripts\tinymce\themes\simple\editor_template_src.js" />
+    <Content Include="scripts\tinymce\themes\simple\img\icons.gif" />
+    <Content Include="scripts\tinymce\themes\simple\langs\en.js" />
+    <Content Include="scripts\tinymce\themes\simple\skins\default\content.css" />
+    <Content Include="scripts\tinymce\themes\simple\skins\default\ui.css" />
+    <Content Include="scripts\tinymce\themes\simple\skins\o2k7\content.css" />
+    <Content Include="scripts\tinymce\themes\simple\skins\o2k7\img\button_bg.png" />
+    <Content Include="scripts\tinymce\themes\simple\skins\o2k7\ui.css" />
+    <Content Include="scripts\tinymce\tiny_mce.js" />
+    <Content Include="scripts\tinymce\tiny_mce_popup.js" />
+    <Content Include="scripts\tinymce\tiny_mce_src.js" />
+    <Content Include="scripts\tinymce\utils\editable_selects.js" />
+    <Content Include="scripts\tinymce\utils\form_utils.js" />
+    <Content Include="scripts\tinymce\utils\mctabs.js" />
+    <Content Include="scripts\tinymce\utils\validate.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataAccesBase.cs" />
+    <Compile Include="globalDegiskenler.cs" />
+    <Compile Include="Lib\Ilceler.cs" />
+    <Compile Include="Lib\Mail.cs" />
+    <Compile Include="Lib\Musteriler.cs" />
+    <Compile Include="Lib\Personeller.cs" />
+    <Compile Include="Lib\Sehirler.cs" />
+    <Compile Include="Lib\SemtMah.cs" />
+    <Compile Include="Lib\Turlar.cs" />
+    <Compile Include="Lib\TurMus.cs" />
+    <Compile Include="Lib\Ulkeler.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11495</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:11356/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.9.1\build\Microsoft.ApplicationInsights.DependencyCollector.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.9.1\build\Microsoft.ApplicationInsights.DependencyCollector.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.9.1\build\Microsoft.ApplicationInsights.PerfCounterCollector.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.9.1\build\Microsoft.ApplicationInsights.PerfCounterCollector.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.9.1\build\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.9.1\build\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.WindowsServer.2.9.1\build\Microsoft.ApplicationInsights.WindowsServer.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.WindowsServer.2.9.1\build\Microsoft.ApplicationInsights.WindowsServer.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.Web.2.9.1\build\Microsoft.ApplicationInsights.Web.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.Web.2.9.1\build\Microsoft.ApplicationInsights.Web.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.3.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.3.0.0\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.9.1\build\Microsoft.ApplicationInsights.DependencyCollector.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.9.1\build\Microsoft.ApplicationInsights.DependencyCollector.targets')" />
+  <Import Project="..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.9.1\build\Microsoft.ApplicationInsights.PerfCounterCollector.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.9.1\build\Microsoft.ApplicationInsights.PerfCounterCollector.targets')" />
+  <Import Project="..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.9.1\build\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.9.1\build\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.targets')" />
+  <Import Project="..\packages\Microsoft.ApplicationInsights.WindowsServer.2.9.1\build\Microsoft.ApplicationInsights.WindowsServer.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.WindowsServer.2.9.1\build\Microsoft.ApplicationInsights.WindowsServer.targets')" />
+  <Import Project="..\packages\Microsoft.ApplicationInsights.Web.2.9.1\build\Microsoft.ApplicationInsights.Web.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.Web.2.9.1\build\Microsoft.ApplicationInsights.Web.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

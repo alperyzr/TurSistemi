@@ -1,0 +1,117 @@
+﻿@model IEnumerable<HakanERP.Models.MusterilerModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Müşteri Listesi</h2>
+
+<br />
+<table border="0" style="border-top:0px;">
+    <tr>
+        <td>
+
+            @Html.ActionLink("Müşteri Ekle", "Ekle", "Musteri", new { @class = "btn btn-danger" })
+        </td>
+        <td>
+
+            @Html.ActionLink("Excele Aktar", "Excel", "Musteri", new { @class = "btn btn-danger" })
+        </td>
+        <td>
+
+            @Html.ActionLink("Doğum Gunu Listesi", "DogumGunu", "Musteri", new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+</table>
+<br /><br />
+<table class="table table-hover" id="Musteri">
+
+    <thead>
+        <tr>
+            <th>
+                Eklendiği Tarih
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.TcNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ad)      
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefon)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.EPosta)
+            </th>
+
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem=>item.EklendigiTarih)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TcNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ad)
+               
+                    @Html.DisplayFor(modelItem => item.Soyad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefon)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.EPosta)
+                </td>
+
+                <td>
+                    @Html.ActionLink("Güncelle", "Guncelle", new { id = item.ID }, new { @class = "btn btn-dark" }) 
+                    @Html.ActionLink("Detay", "Detay", new { id = item.ID }, new { @class = "btn btn-dark" }) 
+                    @Html.ActionLink("Turları", "TurKatilim", new { id = item.ID }, new { @class = "btn btn-dark" }) 
+                    <input type="button" value="Sil" data-id="@item.ID" class="delete-row btn btn-dark" />
+                </td>
+            </tr>
+        }
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".delete-row").click(function () {
+                    var id = $(this).attr("data-id");
+                    var closestTR = $(this).closest("tr");
+                    var confirmDelete = confirm('Form Numara\'si' + id + ' olan kayıdı silmek istediğinizden emin misiniz?');
+                    if (confirmDelete) {
+                        $.ajax({
+                            url: '/Musteri/Sil/' + id,
+                            type: 'POST',
+                            success: function (result) {
+                                if (result == true) {
+                                    closestTR.fadeOut(1000, function () {
+                                        closestTR.remove();
+                                    });
+                                }
+                                else alert("Silme işlemi sırasında hata oluştu");
+                            }
+                        });
+                    }
+
+                });
+
+            });
+        </script>
+    </tbody>
+</table>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#Musteri').DataTable();
+    });
+</script>
+

@@ -1,0 +1,60 @@
+﻿@model IEnumerable<HakanERP.Models.PersonellerModel>
+
+@{
+    ViewBag.Title = "Detay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br /><br />
+
+
+<div style="width:100%; background-color:#e32124; height:30px; border:2px solid #000000; border-bottom:0px; color:#ffffff; position:center; font-size:18px; padding-left:25px;">Personel Detayı</div>
+<table class="table table-hover" style="border:3px solid #000000; border-top:0px;">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Adi)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adi)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Soyadi)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soyadi)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.KullaniciAdi)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.KullaniciAdi)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Sifre)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sifre)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EMail)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.EMail)
+            </td>
+        </tr>
+
+    }
+
+</table>
+
+@Html.ActionLink("Listeye Geri Dön", "Index", "Personel", new { @class = "btn btn-dark" })

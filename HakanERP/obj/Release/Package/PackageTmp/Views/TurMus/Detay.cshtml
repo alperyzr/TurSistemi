@@ -1,0 +1,109 @@
+﻿@model IEnumerable<HakanERP.Models.TurMusModel>
+
+@{
+    ViewBag.Title = "Detay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<br /><br />
+<div style="width:100%; background-color:#e32124; height:30px; border:2px solid #000000; border-bottom:0px; color:#ffffff; position:center; font-size:18px; padding-left:25px;">Yolcu Detayı</div>
+<table class="table" style="border:3px solid #000000; border-top:0px;">
+   
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>
+               Müşteri Adı
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ad)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Müşteri Soyad
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soyad)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Müşteri Tc
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.TcNo)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Müşteri E-Posta
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.EPosta)
+            </td>
+        </tr>
+        <tr>
+
+            <th>
+               Müşteri Tel
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.GSM)
+            </td>
+        </tr>
+        <tr>
+
+            <th>
+                Müşteri Tel 2
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefon)
+            </td>
+        </tr>
+        <tr>
+            <th>
+               Tur Adı
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.TurAdi)
+            </td>
+        </tr>
+        <tr>
+            <th>
+               Tur Başlangıç Tarihi
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.BaslangicTarihi)
+            </td>
+        </tr>
+        <tr>
+            <th>
+               Tur Bitiş Tarihi
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.BitisTarihi)
+            </td>
+        </tr>
+        
+        <tr>
+            <th>
+               Personel Ad
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adi)
+            </td>
+        </tr>
+        <tr>
+            <th>
+               Personel Soyad
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soyadi)
+            </td>
+        </tr>
+    }
+
+</table>
+@Html.ActionLink("Listeye Geri Dön", "Index", "TurMus",new { @class = "btn btn-dark" })

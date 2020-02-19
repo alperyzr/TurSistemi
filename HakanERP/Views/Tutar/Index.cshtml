@@ -1,0 +1,249 @@
+﻿@model IEnumerable<HakanERP.Models.TurMusModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Tur Listesi</h2>
+<table>
+    <tr>
+        <td>
+            @Html.ActionLink("Tur Ekle", "Ekle", "Tutar", new { @class = "btn btn-danger" })
+        </td>
+        <td>
+            @Html.ActionLink("Excele Aktar", "Excel", "Tutar", new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+</table>
+
+
+
+<br />
+<br />
+
+
+<table class="table table-hover" id="Turlar">
+    <thead>
+        <tr>
+            <th>Eklenen Tarih</th>
+           <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.TurAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BaslangicTarihi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BitisTarihi)
+            </th>
+            <th>İşlemler</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem=>item.ET)
+                </td>
+                <td>
+                    <div id="TurID+@item.TurID">
+                        @Html.DisplayFor(modelItem => item.TurID)
+                    </div>
+                </td>
+
+                <td>
+                    <div id="TurAdi+@item.TurID">
+                        @Html.DisplayFor(modelItem => item.TurAdi)
+                    </div>
+                </td>
+                <td>
+                    <div id="bas+@item.TurID">@Html.DisplayFor(modelItem => item.BaslangicTarihi)</div>
+
+                </td>
+                <td>
+                    <div id="bit+@item.TurID">@Html.DisplayFor(modelItem => item.BitisTarihi)</div>
+
+                </td>
+
+
+                <td>
+                    @Html.ActionLink("Güncelle", "Guncelle", new { id = item.TurID }, new { @class = "btn btn-dark" }) 
+                    @Html.ActionLink("Detay", "Detay", new { id = item.TurID }, new { @class="btn btn-dark"}) 
+                    @Html.ActionLink("Katılanlar", "Katilanlar", new { id = item.TurID }, new { @class = "btn btn-dark" }) 
+                    <button type="button" class="btn btn-dark" onclick="basCalis(this.id)" data-toggle="modal" data-target="#exampleModal" id="@item.TurID"> + </button>
+                    <input type="button" value="Sil" data-id="@item.TurID" class="delete-row btn btn-dark" />
+
+                </td>
+            </tr>
+        }
+        <script type="text/javascript">
+    $(document).ready(function () {
+        $(".delete-row").click(function () {
+            var id = $(this).attr("data-id");
+            var closestTR = $(this).closest("tr");
+            var confirmDelete = confirm('Form Numara\'si' + id + ' olan kayıdı silmek istediğinizden emin misiniz?');
+            if (confirmDelete) {
+                $.ajax({
+                    url: '/Tutar/Sil/' + id,
+                    type: 'POST',
+                    success: function (result) {
+                        if (result == true) {
+                            closestTR.fadeOut(1000, function () {
+                                closestTR.remove();
+                            });
+                        }
+                        else alert("Silme işlemi sırasında hata oluştu");
+                    }
+                });
+            }
+
+        });
+
+    });
+        </script>
+    </tbody>
+    
+</table>
+
+
+
+
+@*----------------MODAL POPUP------------------*@
+
+
+@foreach (var item in Model)
+{
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header" style="border-bottom:3px solid #5cb85c">
+
+                    <button type="button" class="close btn-success" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title" id="exampleModalLabel">Yolcu Ekle</h5>
+                </div>
+                <div class="modal-body">
+
+                    @using (Html.BeginForm("YolcuEkle", "Tutar", FormMethod.Post))
+                    {
+                    <table class="table">
+
+                        <input type="hidden" name="TurID" value="" id="popTurID" readonly="readonly" />
+
+                        <tr>
+
+                            <td style="border-top:0px;">
+                                Tur Adı
+                            </td>
+                            <td style="border-top:0px;">
+                                <div>
+                                    <input type="text" name="TurAdi" value="" id="popTurAdi" readonly="readonly" class="form-control" />
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Başlangıç Tarihi
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="text" name="BaslangicTarihi" value="" id="popBaslangicTarih" readonly="readonly" class="form-control" />
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Bitis Tarihi</td>
+                            <td>
+                                <div>
+                                    <input type="text" name="BitisTarihi" value="" id="popBitis" readonly="readonly" class="form-control" />
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Müşteri TC </td>
+                            <td>
+                                <div>
+                                    <input type="text" name="TcNo" value="" id="MusteriID" class="form-control" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tutar</td>
+                            <td>
+                                <div>
+                                    <input type="text" name="Tutar" value="" id="Tutar" class="form-control" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Personel Ad</td>
+                            <td>
+                                <div id="popPersonel">
+
+                                   
+
+                                    <input type="text" name="@Session["PersonelID"].ToString()" value="@Session["PersonelAd"].ToString()  @Session["PersonelSoyAd"].ToString()" id="@Session["PersonelID"].ToString()" class="form-control" readonly="readonly" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="kaydet" class="btn btn-success" id="@item.TurID" />
+
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                    }
+
+
+
+                </div>
+                <div class="modal-footer" style="border-top:3px solid #5cb85c;">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+}
+
+<script>
+    function basCalis(gelenid) {
+        var popD = document.getElementById("popTurID");
+        var d = document.getElementById("TurID+" + gelenid);
+        popD.value = d.innerHTML.trim();
+
+
+        var popA = document.getElementById("popTurAdi");
+        var a = document.getElementById("TurAdi+" + gelenid);
+        popA.value = a.innerHTML.trim();
+
+        var popB = document.getElementById("popBaslangicTarih");
+        var b = document.getElementById("bas+" + gelenid);
+        popB.value = b.innerHTML.trim();
+
+        var popC = document.getElementById("popBitis");
+        var c = document.getElementById("bit+" + gelenid);
+        popC.value = c.innerHTML.trim();
+
+
+
+
+    }
+
+</script>
+<script>
+    $(document).ready( function () {
+        $('#Turlar').DataTable();
+    } );
+</script>
+
+
+

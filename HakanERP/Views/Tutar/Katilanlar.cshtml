@@ -1,0 +1,136 @@
+﻿@model IEnumerable<HakanERP.Models.TurMusModel>
+
+@{
+    ViewBag.Title = "Detay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+@foreach (var item in Model)
+{
+    <h4>
+        @Html.DisplayFor(m => item.TurAdi)
+
+    'na Katılan Müşteriler
+</h4>
+    break;
+
+}
+<br>
+<br /><br />
+<table class="table table-hover" id="TurKatil">
+    <thead>
+        <tr>
+            <th>
+                Eklendiği Tarih
+            </th>
+            <td>
+                Tur Adı
+            </td>
+            <td>
+                Başlangıç Tarihi
+            </td>
+            <td>
+                Bitiş Tarihi
+            </td>
+            <td>
+                Tutar
+            </td>
+            <td>
+                Müşteri Adı
+            </td>
+            <td>
+                Personel Adı      
+            </td>
+            <td>
+                İşlemler
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(m=>item.EkTarih)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.TurAdi)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.BaslangicTarihi)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(m => item.BitisTarihi)
+                </td>
+                <td>
+                    @Html.DisplayFor(m=>item.Tutar)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Ad)
+                
+                    @Html.DisplayFor(m => item.Soyad)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.Adi)
+               
+                    @Html.DisplayFor(m => item.Soyadi)
+                </td>
+                <td>
+                    
+                    @Html.ActionLink("Detay", "YolcuDetay", new { id = item.ID }, new { @class = "btn btn-dark" })
+                   @Html.ActionLink("Excele Aktar", "ExcelKatilan", "Tutar",new { id = item.TurID }, new { @class = "btn btn-dark" })
+                    <input type="button" value="Sil" data-id="@item.ID" class="delete-row btn btn-dark" />
+                </td>
+            </tr>
+        }
+        <script type="text/javascript">
+    $(document).ready(function () {
+        $(".delete-row").click(function () {
+            var id = $(this).attr("data-id");
+            var closestTR = $(this).closest("tr");
+            var confirmDelete = confirm('Form Numara\'si' + id + ' olan kayıdı silmek istediğinizden emin misiniz?');
+            if (confirmDelete) {
+                $.ajax({
+                    url: '/Tutar/YolcuSil/' + id,
+                    type: 'POST',
+                    success: function (result) {
+                        if (result == true) {
+                            closestTR.fadeOut(1000, function () {
+                                closestTR.remove();
+                            });
+                        }
+                        else alert("Silme işlemi sırasında hata oluştu");
+                    }
+                });
+            }
+
+        });
+
+    });
+        </script>
+    </tbody>
+    
+</table>
+@{ 
+    int toplam = 0;
+}
+@foreach (var item in Model)
+{
+    toplam += item.Tutar;
+}
+<br />
+<h4 class="alert-success">
+    Toplam Tutar = @toplam ₺
+</h4>
+
+@Html.ActionLink("Tur Listesine Geri Dön", "Index", "Tutar", new { @class = "btn btn-dark" })
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#TurKatil').DataTable();
+    });
+</script>
+

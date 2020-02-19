@@ -1,0 +1,341 @@
+﻿@model IEnumerable<HakanERP.Models.TurMusModel>
+
+@{
+    ViewBag.Title = "Detay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<br />
+@foreach (var item in Model)
+{
+    <h4>
+        @Html.DisplayFor(m =>item.TurAdi)
+        'un daki
+        @Html.DisplayFor(m=>item.Ad)
+        @Html.DisplayFor(m=>item.Soyad)
+        'ın Detayı
+       
+    </h4>
+    break;
+}
+<br />
+
+<div style="width:100%; background-color:#e32124; height:30px; border:2px solid #000000; border-bottom:0px; color:#ffffff; position:center; font-size:18px; padding-left:25px;">Yolcu Detayı</div>
+<table class="table table-hover" style="border:3px solid #000000; border-top:0px;">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>
+                Ülke Adı
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.UlkeAdi)
+            </td>
+            <th style="border-left:3px solid #000000">
+                T.C No
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.TcNo)
+            </td>
+            <th></th>
+            <td style="border-right:3px solid #000000"></td>
+        </tr>
+
+        <tr>
+            <th>
+                Müşteri Adı
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ad)
+            </td>
+            <th style="border-left:3px solid #000000">
+                Müşteri Soyadı
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soyad)
+            </td>
+            <th>
+                Cinsiyet
+            </th>
+            <td>
+                @Html.DisplayFor(model => item.Cinsiyet)
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                Doğum Tarihi
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.DogumTarihi)
+            </td>
+            <th style="border-left:3px solid #000000">
+               Yaş
+            </th>
+            <td>
+            @Html.DisplayFor(modelItem => item.Yas)
+            </td>
+            <th></th>
+            <td style="border-right:3px solid #000000"></td>
+        </tr>
+
+        <tr>
+            <th>
+                Telefon
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefon)
+            </td>
+            <th style="border-left:3px solid #000000">
+                Telefon 2
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.GSM)
+            </td>
+            <th></th>
+            <td style="border-right:3px solid #000000"></td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Adres)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adres)
+            </td>
+            <th style="border-left:3px solid #000000">
+                Ünvan
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Unvan)
+            </td>
+            <th></th>
+            <td style="border-right:3px solid #000000"></td>
+        </tr>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EPosta)
+            </th>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.EPosta)
+            </td>
+            <th style="border-left:3px solid #000000">
+                @Html.DisplayNameFor(model => model.Fax)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fax)
+            </td>
+            <th></th>
+            <td style="border-right:3px solid #000000"></td>
+        </tr>
+
+
+        <tr>
+            <th>
+              Pasaport No
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.PasapartNo)
+            </td>
+            <th style="border-left:3px solid #000000">
+               Pasaport Bitiş Tarihi
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.PasaportBitisTarihi)
+            </td>
+            <th></th>
+            <td style="border-right:3px solid #000000"></td>
+        </tr>
+        <tr>
+            <th>
+                Rez No
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.RezNo)
+            </td>
+            <th style="border-left:3px solid #000000">
+           Tutar
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tutar)
+            </td>
+            <th></th>
+            <td style="border-right:3px solid #000000"></td>
+        </tr>
+        <tr>
+            <th>
+             Vergi Dairesi
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.VergiDairesi)
+            </td>
+            <th style="border-left:3px solid #000000">
+               Vergi No
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.VergiNo)
+            </td>
+            <th></th>
+            <td style="border-right:3px solid #000000"></td>
+        </tr>
+        <tr>
+            <th>
+                Tur Adı
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.TurAdi)
+            </td>
+            <th style="border-left:3px solid #000000">
+               Tur Başlangıç Tarihi
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.BaslangicTarihi)
+            </td>
+            <th>
+               Tur Bitiş Tarihi
+            </th>
+
+            <td style="border-right:3px solid #000000">
+                @Html.DisplayFor(modelItem => item.BitisTarihi)
+            </td>
+        </tr>
+        @*<tr>
+            <th>
+                Personel Adı
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adi)
+            </td>
+            <th style="border-left:3px solid #000000">
+                Personel Soyadı
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soyadi)
+            </td>
+            <th></th>
+            <td style="border-right:3px solid #000000"></td>
+        </tr>*@
+    }
+
+</table>
+
+<br /><br />
+<div style="width:100%; background-color:#e32124; height:30px; border:2px solid #000000; border-bottom:0px; color:#ffffff; position:center; font-size:18px; padding-left:25px;">Yolcuyu Kaydeden Personel Bilgisi</div>
+<table class="table table-hover" style="border:3px solid #000000; border-top:0px;">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.EkTarih)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.EkTarih)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.EkPersonel)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.EkPersonel)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.GuTarih)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.GuTarih)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.GuPersonel)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.GuPersonel)
+            </td>
+        </tr>
+
+    }
+
+</table>
+
+<br /><br />
+<div style="width:100%; background-color:#e32124; height:30px; border:2px solid #000000; border-bottom:0px; color:#ffffff; position:center; font-size:18px; padding-left:25px;">Turu Kaydeden Personel Bilgisi</div>
+<table class="table table-hover" style="border:3px solid #000000; border-top:0px;">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                Turun Eklendiği Tarih
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.ET)
+            </td>
+            <td>
+                Turu Ekleyen Personel
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.EP)
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                Turun Güncellenme Tarihi
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.GT)
+            </td>
+            <td>
+                Turu Güncelleyen Personel
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.GP)
+            </td>
+        </tr>
+    }
+</table>
+<br /><br />
+<div style="width:100%; background-color:#e32124; height:30px; border:2px solid #000000; border-bottom:0px; color:#ffffff; position:center; font-size:18px; padding-left:25px;">Müşteriyi Kaydeden Personel Bilgisi</div>
+
+<table class="table table-hover" style="border:3px solid #000000; border-top:0px;">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                Müşterinin eklendiği Tarih
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.EklendigiTarih)
+            </td>
+            <td>
+                Müşteriyi Ekleyen Personel
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.EkleyenPersonel)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Müşteriyi Guncelleme Tarihi
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.GuncellendigiTarih)
+            </td>
+            <td>
+                Müşteriyi Güncelleyen Personel
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.GuncelleyenPersonel)
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+
+
+
+
+

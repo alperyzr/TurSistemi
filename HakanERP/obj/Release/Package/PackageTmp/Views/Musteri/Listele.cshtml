@@ -1,0 +1,92 @@
+﻿@model IEnumerable<HakanERP.Models.MusterilerModel>
+@{
+    ViewBag.Title = "Listele";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Listele</h2>
+<table class="table table-hover" id="liste">
+    <thead>
+        <tr>
+            <td>
+                Tur Adı
+            </td>
+            <td>
+                Başlangıç Tarihi
+            </td>
+            <td>
+                Bitiş Tarihi
+            </td>
+            <td>
+                Rez No
+            </td>
+            <td>
+                Cinsiyet
+            </td>
+            <td>
+                Ad
+            </td>
+            <td>
+                Soyad
+            </td>
+            <td>
+                Tel
+            </td>
+            <td>
+                Dogum tarihi
+            </td>
+            <td>
+                TC
+            </td>
+            <td>
+                Tutar
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.ListDetay)
+        {
+            <tr>
+                <td>
+                    @item.TurAdi
+                </td>
+                <td>
+                    @item.BaslangicTarihi
+                </td>
+                <td>
+                    @item.BitisTarihi
+                </td>
+                <td>
+                    @item.RezNo
+                </td>
+                <td>
+                    @item.Cinsiyet
+                </td>
+                <td>
+                    @item.Ad
+                </td>
+                <td>
+                    @item.Soyad
+                </td>
+
+                <td>
+                    @item.Telefon
+                </td>
+                <td>
+                    @item.DogumTarihi
+                </td>
+                <td>
+                    @item.TcNo
+                </td>
+                <td>
+                    @item.Tutar
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#liste').DataTable();
+    });
+</script>
